@@ -16,7 +16,7 @@ public class LaunchUrlTest {
         DesiredCapabilities capabilities= DesiredCapabilities.chrome();
         capabilities.setPlatform(Platform.LINUX);
         capabilities.setBrowserName("chrome");
-        rc.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"),capabilities));
+        rc.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),capabilities));
     }
     public WebDriver getdriver(){
         return rc.get();
